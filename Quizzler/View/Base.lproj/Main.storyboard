@@ -19,43 +19,57 @@
                                 <rect key="frame" x="15" y="74" width="400" height="809"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DOg-wM-AVB" userLabel="Score">
-                                        <rect key="frame" x="0.0" y="0.0" width="400" height="86.666666666666671"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="400" height="65.666666666666671"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tXT-xm-uEa" userLabel="Text">
-                                        <rect key="frame" x="0.0" y="96.666666666666686" width="400" height="512.33333333333326"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tXT-xm-uEa" userLabel="Text">
+                                        <rect key="frame" x="0.0" y="75.666666666666657" width="400" height="443.33333333333337"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fZm-lA-9a8" userLabel="True">
-                                        <rect key="frame" x="0.0" y="619" width="400" height="80"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fZm-lA-9a8" userLabel="firstOption">
+                                        <rect key="frame" x="0.0" y="529" width="400" height="80"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="80" id="jds-h6-y9c"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                        <state key="normal" title="True" backgroundImage="Rectangle">
+                                        <state key="normal" title="1 option" backgroundImage="Rectangle">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
                                             <action selector="answerPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="100-ZJ-Jvx"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lmg-bM-Ihs" userLabel="False">
-                                        <rect key="frame" x="0.0" y="709" width="400" height="80"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lmg-bM-Ihs" userLabel="secondOption">
+                                        <rect key="frame" x="0.0" y="619" width="400" height="80"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="80" id="4WV-fI-TSr"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="25"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                        <state key="normal" title="False" backgroundImage="Rectangle">
+                                        <state key="normal" title="2 option" backgroundImage="Rectangle">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
                                             <action selector="answerPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xZk-bP-0WI"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hcj-0R-TXT" userLabel="thirdOption">
+                                        <rect key="frame" x="0.0" y="709" width="400" height="80"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" id="iuS-ZO-OMM"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="25"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="3 option" backgroundImage="Rectangle">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="answerPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hvH-SS-W4S"/>
                                         </connections>
                                     </button>
                                     <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progressViewStyle="bar" progress="0.10000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="tvK-bN-bik" userLabel="Bar Progress View">
@@ -80,11 +94,12 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="falseAnswer" destination="lmg-bM-Ihs" id="yWP-jc-ge1"/>
+                        <outlet property="firstOption" destination="fZm-lA-9a8" id="ggN-Yl-RJs"/>
                         <outlet property="progressBar" destination="tvK-bN-bik" id="ZoH-Y2-JGo"/>
                         <outlet property="question" destination="tXT-xm-uEa" id="u2m-bw-3N0"/>
                         <outlet property="score" destination="DOg-wM-AVB" id="W2V-2W-cYy"/>
-                        <outlet property="trueAnswer" destination="fZm-lA-9a8" id="ggN-Yl-RJs"/>
+                        <outlet property="secondOption" destination="lmg-bM-Ihs" id="yWP-jc-ge1"/>
+                        <outlet property="thirdOption" destination="hcj-0R-TXT" id="aCU-Kd-lFZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

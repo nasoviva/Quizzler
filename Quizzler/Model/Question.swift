@@ -9,19 +9,16 @@ import Foundation
 
 struct Question {
     let text: String
-    let answer: String
-    //let options: [String]
-    //let correctAnswer: String
+    let firstOption: String
+    let secondOption: String
+    let thirdOption: String
+    let correctAnswer: String
 
-
-    init(q: String, a: String) {
+    init(q: String, a: [String], correctAnswer: String) {
         text = q
-        answer = a
+        firstOption = a[0]
+        secondOption = a[1]
+        thirdOption = a[2]
+        self.correctAnswer = correctAnswer
     }
-
-//    init(q: String, o: [String], a: String) {
-//        text = q
-//        options = o
-//        correctAnswer = a
-//    }
 }
