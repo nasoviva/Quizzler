@@ -9,7 +9,7 @@ import Foundation
 
 struct QuizBrain {
     let quiz = [
-        Question(q: "Which is the largest organ in the human body111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111?", a: ["Hear111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111t", "Skin", "Large Intestine"], correctAnswer: "Skin"),
+        Question(q: "Which is the largest organ in the human body?", a: ["Heart", "Skin", "Large Intestine"], correctAnswer: "Skin"),
         Question(q: "Five dollars is worth how many nickels?", a: ["25", "50", "100"], correctAnswer: "100"),
         Question(q: "What do the letters in the GMT time zone stand for?", a: ["Global Meridian Time", "Greenwich Mean Time", "General Median Time"], correctAnswer: "Greenwich Mean Time"),
         Question(q: "What is the French word for 'hat'?", a: ["Chapeau", "Écharpe", "Bonnet"], correctAnswer: "Chapeau"),
@@ -57,12 +57,17 @@ struct QuizBrain {
         return Float(questionNumber + 1) / Float(quiz.count)
     }
 
-    mutating func nextQuestion() {
+    mutating func nextQuestion() -> Bool {
         if questionNumber + 1 < quiz.count {
             questionNumber = questionNumber + 1
+            return true
         } else {
-            questionNumber = 0
-            score = 0
+            return false
         }
+    }
+
+    mutating func newStart() {
+        questionNumber = 0
+        score = 0
     }
 }
