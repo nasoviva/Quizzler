@@ -7,6 +7,5 @@
 <br>
 <div align="center">
     <img src="https://github.com/nasoviva/Quizzler/blob/main/LaunchScreen.png" alt="Описание изображения" width="300"/>
-  <br>
     <img src="https://github.com/nasoviva/Quizzler/blob/main/Main.png" alt="Описание изображения" width="300"/>
 </div>
