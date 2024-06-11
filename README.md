@@ -1,4 +1,3 @@
-# Quizzler
 <div align="center">
   <h1><b>Quizzler</b></h1>
 </div>
